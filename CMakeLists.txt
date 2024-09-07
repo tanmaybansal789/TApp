@@ -1,8 +1,6 @@
 cmake_minimum_required(VERSION 3.10)
 project(TApp)
 
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fsanitize=address -fno-omit-frame-pointer")
-
 # Set C++ standard
 set(CMAKE_CXX_STANDARD 20)
 
@@ -13,8 +11,6 @@ set(SOURCES
 
         # Application sources
         src/Application/Application.cpp
-
-        src/main.cpp
 )
 
 # Add header files
@@ -88,7 +84,7 @@ target_include_directories(ImGui PUBLIC external/imgui
 
 # Includes and sources
 include_directories(include)
-add_executable(TApp ${SOURCES} ${HEADERS})
+add_library(TApp STATIC ${SOURCES} ${HEADERS})
 
 # Link libraries
 target_link_libraries(TApp
