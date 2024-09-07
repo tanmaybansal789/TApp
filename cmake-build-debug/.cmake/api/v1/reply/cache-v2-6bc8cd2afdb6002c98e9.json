@@ -1686,6 +1686,18 @@
 			"value" : "ON"
 		},
 		{
+			"name" : "TApp_LIB_DEPENDS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Dependencies for the target"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "general;/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/OpenGL.framework;general;glad;general;glfw;general;ImGui;"
+		},
+		{
 			"name" : "TApp_SOURCE_DIR",
 			"properties" : 
 			[

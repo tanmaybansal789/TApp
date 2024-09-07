@@ -322,6 +322,9 @@ TApp_BINARY_DIR:STATIC=/Users/puru/Desktop/C++ Projects/TApp/cmake-build-debug
 //Value Computed by CMake
 TApp_IS_TOP_LEVEL:STATIC=ON
 
+//Dependencies for the target
+TApp_LIB_DEPENDS:STATIC=general;/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/OpenGL.framework;general;glad;general;glfw;general;ImGui;
+
 //Value Computed by CMake
 TApp_SOURCE_DIR:STATIC=/Users/puru/Desktop/C++ Projects/TApp
 

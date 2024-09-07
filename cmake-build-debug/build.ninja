@@ -86,7 +86,7 @@ build cmake_object_order_depends_target_ImGui: phony || CMakeFiles/ImGui.dir
 build CMakeFiles/ImGui.dir/external/imgui/backends/imgui_impl_glfw.cpp.o: CXX_COMPILER__ImGui_unscanned_Debug /Users/puru/Desktop/C++$ Projects/TApp/external/imgui/backends/imgui_impl_glfw.cpp || cmake_object_order_depends_target_ImGui
   DEFINES = -DGL_SILENCE_DEPRECATION
   DEP_FILE = CMakeFiles/ImGui.dir/external/imgui/backends/imgui_impl_glfw.cpp.o.d
-  FLAGS = -fsanitize=address -fno-omit-frame-pointer -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
   INCLUDES = -F/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks -I"/Users/puru/Desktop/C++ Projects/TApp/external/glfw/include" -I"/Users/puru/Desktop/C++ Projects/TApp/external/imgui" -I"/Users/puru/Desktop/C++ Projects/TApp/include"
   OBJECT_DIR = CMakeFiles/ImGui.dir
   OBJECT_FILE_DIR = CMakeFiles/ImGui.dir/external/imgui/backends
@@ -94,7 +94,7 @@ build CMakeFiles/ImGui.dir/external/imgui/backends/imgui_impl_glfw.cpp.o: CXX_CO
 build CMakeFiles/ImGui.dir/external/imgui/backends/imgui_impl_opengl3.cpp.o: CXX_COMPILER__ImGui_unscanned_Debug /Users/puru/Desktop/C++$ Projects/TApp/external/imgui/backends/imgui_impl_opengl3.cpp || cmake_object_order_depends_target_ImGui
   DEFINES = -DGL_SILENCE_DEPRECATION
   DEP_FILE = CMakeFiles/ImGui.dir/external/imgui/backends/imgui_impl_opengl3.cpp.o.d
-  FLAGS = -fsanitize=address -fno-omit-frame-pointer -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
   INCLUDES = -F/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks -I"/Users/puru/Desktop/C++ Projects/TApp/external/glfw/include" -I"/Users/puru/Desktop/C++ Projects/TApp/external/imgui" -I"/Users/puru/Desktop/C++ Projects/TApp/include"
   OBJECT_DIR = CMakeFiles/ImGui.dir
   OBJECT_FILE_DIR = CMakeFiles/ImGui.dir/external/imgui/backends
@@ -102,7 +102,7 @@ build CMakeFiles/ImGui.dir/external/imgui/backends/imgui_impl_opengl3.cpp.o: CXX
 build CMakeFiles/ImGui.dir/external/imgui/imgui.cpp.o: CXX_COMPILER__ImGui_unscanned_Debug /Users/puru/Desktop/C++$ Projects/TApp/external/imgui/imgui.cpp || cmake_object_order_depends_target_ImGui
   DEFINES = -DGL_SILENCE_DEPRECATION
   DEP_FILE = CMakeFiles/ImGui.dir/external/imgui/imgui.cpp.o.d
-  FLAGS = -fsanitize=address -fno-omit-frame-pointer -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
   INCLUDES = -F/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks -I"/Users/puru/Desktop/C++ Projects/TApp/external/glfw/include" -I"/Users/puru/Desktop/C++ Projects/TApp/external/imgui" -I"/Users/puru/Desktop/C++ Projects/TApp/include"
   OBJECT_DIR = CMakeFiles/ImGui.dir
   OBJECT_FILE_DIR = CMakeFiles/ImGui.dir/external/imgui
@@ -110,7 +110,7 @@ build CMakeFiles/ImGui.dir/external/imgui/imgui.cpp.o: CXX_COMPILER__ImGui_unsca
 build CMakeFiles/ImGui.dir/external/imgui/imgui_demo.cpp.o: CXX_COMPILER__ImGui_unscanned_Debug /Users/puru/Desktop/C++$ Projects/TApp/external/imgui/imgui_demo.cpp || cmake_object_order_depends_target_ImGui
   DEFINES = -DGL_SILENCE_DEPRECATION
   DEP_FILE = CMakeFiles/ImGui.dir/external/imgui/imgui_demo.cpp.o.d
-  FLAGS = -fsanitize=address -fno-omit-frame-pointer -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
   INCLUDES = -F/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks -I"/Users/puru/Desktop/C++ Projects/TApp/external/glfw/include" -I"/Users/puru/Desktop/C++ Projects/TApp/external/imgui" -I"/Users/puru/Desktop/C++ Projects/TApp/include"
   OBJECT_DIR = CMakeFiles/ImGui.dir
   OBJECT_FILE_DIR = CMakeFiles/ImGui.dir/external/imgui
@@ -118,7 +118,7 @@ build CMakeFiles/ImGui.dir/external/imgui/imgui_demo.cpp.o: CXX_COMPILER__ImGui_
 build CMakeFiles/ImGui.dir/external/imgui/imgui_draw.cpp.o: CXX_COMPILER__ImGui_unscanned_Debug /Users/puru/Desktop/C++$ Projects/TApp/external/imgui/imgui_draw.cpp || cmake_object_order_depends_target_ImGui
   DEFINES = -DGL_SILENCE_DEPRECATION
   DEP_FILE = CMakeFiles/ImGui.dir/external/imgui/imgui_draw.cpp.o.d
-  FLAGS = -fsanitize=address -fno-omit-frame-pointer -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
   INCLUDES = -F/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks -I"/Users/puru/Desktop/C++ Projects/TApp/external/glfw/include" -I"/Users/puru/Desktop/C++ Projects/TApp/external/imgui" -I"/Users/puru/Desktop/C++ Projects/TApp/include"
   OBJECT_DIR = CMakeFiles/ImGui.dir
   OBJECT_FILE_DIR = CMakeFiles/ImGui.dir/external/imgui
@@ -126,7 +126,7 @@ build CMakeFiles/ImGui.dir/external/imgui/imgui_draw.cpp.o: CXX_COMPILER__ImGui_
 build CMakeFiles/ImGui.dir/external/imgui/imgui_tables.cpp.o: CXX_COMPILER__ImGui_unscanned_Debug /Users/puru/Desktop/C++$ Projects/TApp/external/imgui/imgui_tables.cpp || cmake_object_order_depends_target_ImGui
   DEFINES = -DGL_SILENCE_DEPRECATION
   DEP_FILE = CMakeFiles/ImGui.dir/external/imgui/imgui_tables.cpp.o.d
-  FLAGS = -fsanitize=address -fno-omit-frame-pointer -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
   INCLUDES = -F/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks -I"/Users/puru/Desktop/C++ Projects/TApp/external/glfw/include" -I"/Users/puru/Desktop/C++ Projects/TApp/external/imgui" -I"/Users/puru/Desktop/C++ Projects/TApp/include"
   OBJECT_DIR = CMakeFiles/ImGui.dir
   OBJECT_FILE_DIR = CMakeFiles/ImGui.dir/external/imgui
@@ -134,7 +134,7 @@ build CMakeFiles/ImGui.dir/external/imgui/imgui_tables.cpp.o: CXX_COMPILER__ImGu
 build CMakeFiles/ImGui.dir/external/imgui/imgui_widgets.cpp.o: CXX_COMPILER__ImGui_unscanned_Debug /Users/puru/Desktop/C++$ Projects/TApp/external/imgui/imgui_widgets.cpp || cmake_object_order_depends_target_ImGui
   DEFINES = -DGL_SILENCE_DEPRECATION
   DEP_FILE = CMakeFiles/ImGui.dir/external/imgui/imgui_widgets.cpp.o.d
-  FLAGS = -fsanitize=address -fno-omit-frame-pointer -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
   INCLUDES = -F/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks -I"/Users/puru/Desktop/C++ Projects/TApp/external/glfw/include" -I"/Users/puru/Desktop/C++ Projects/TApp/external/imgui" -I"/Users/puru/Desktop/C++ Projects/TApp/include"
   OBJECT_DIR = CMakeFiles/ImGui.dir
   OBJECT_FILE_DIR = CMakeFiles/ImGui.dir/external/imgui
@@ -149,7 +149,7 @@ build CMakeFiles/ImGui.dir/external/imgui/imgui_widgets.cpp.o: CXX_COMPILER__ImG
 
 build libImGui.a: CXX_STATIC_LIBRARY_LINKER__ImGui_Debug CMakeFiles/ImGui.dir/external/imgui/backends/imgui_impl_glfw.cpp.o CMakeFiles/ImGui.dir/external/imgui/backends/imgui_impl_opengl3.cpp.o CMakeFiles/ImGui.dir/external/imgui/imgui.cpp.o CMakeFiles/ImGui.dir/external/imgui/imgui_demo.cpp.o CMakeFiles/ImGui.dir/external/imgui/imgui_draw.cpp.o CMakeFiles/ImGui.dir/external/imgui/imgui_tables.cpp.o CMakeFiles/ImGui.dir/external/imgui/imgui_widgets.cpp.o
   ARCH_FLAGS = -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk
-  LANGUAGE_COMPILE_FLAGS = -fsanitize=address -fno-omit-frame-pointer -g
+  LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = CMakeFiles/ImGui.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -157,7 +157,7 @@ build libImGui.a: CXX_STATIC_LIBRARY_LINKER__ImGui_Debug CMakeFiles/ImGui.dir/ex
   TARGET_PDB = ImGui.a.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target TApp
+# Object build statements for STATIC_LIBRARY target TApp
 
 
 #############################################
@@ -168,7 +168,7 @@ build cmake_object_order_depends_target_TApp: phony || cmake_object_order_depend
 build CMakeFiles/TApp.dir/src/Window/Window.cpp.o: CXX_COMPILER__TApp_unscanned_Debug /Users/puru/Desktop/C++$ Projects/TApp/src/Window/Window.cpp || cmake_object_order_depends_target_TApp
   DEFINES = -DGL_SILENCE_DEPRECATION
   DEP_FILE = CMakeFiles/TApp.dir/src/Window/Window.cpp.o.d
-  FLAGS = -fsanitize=address -fno-omit-frame-pointer -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
   INCLUDES = -F/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks -I"/Users/puru/Desktop/C++ Projects/TApp/external/glfw/include" -I"/Users/puru/Desktop/C++ Projects/TApp/include" -I"/Users/puru/Desktop/C++ Projects/TApp/external/glad/include" -I"/Users/puru/Desktop/C++ Projects/TApp/external/imgui"
   OBJECT_DIR = CMakeFiles/TApp.dir
   OBJECT_FILE_DIR = CMakeFiles/TApp.dir/src/Window
@@ -176,35 +176,27 @@ build CMakeFiles/TApp.dir/src/Window/Window.cpp.o: CXX_COMPILER__TApp_unscanned_
 build CMakeFiles/TApp.dir/src/Application/Application.cpp.o: CXX_COMPILER__TApp_unscanned_Debug /Users/puru/Desktop/C++$ Projects/TApp/src/Application/Application.cpp || cmake_object_order_depends_target_TApp
   DEFINES = -DGL_SILENCE_DEPRECATION
   DEP_FILE = CMakeFiles/TApp.dir/src/Application/Application.cpp.o.d
-  FLAGS = -fsanitize=address -fno-omit-frame-pointer -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
   INCLUDES = -F/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks -I"/Users/puru/Desktop/C++ Projects/TApp/external/glfw/include" -I"/Users/puru/Desktop/C++ Projects/TApp/include" -I"/Users/puru/Desktop/C++ Projects/TApp/external/glad/include" -I"/Users/puru/Desktop/C++ Projects/TApp/external/imgui"
   OBJECT_DIR = CMakeFiles/TApp.dir
   OBJECT_FILE_DIR = CMakeFiles/TApp.dir/src/Application
 
-build CMakeFiles/TApp.dir/src/main.cpp.o: CXX_COMPILER__TApp_unscanned_Debug /Users/puru/Desktop/C++$ Projects/TApp/src/main.cpp || cmake_object_order_depends_target_TApp
-  DEFINES = -DGL_SILENCE_DEPRECATION
-  DEP_FILE = CMakeFiles/TApp.dir/src/main.cpp.o.d
-  FLAGS = -fsanitize=address -fno-omit-frame-pointer -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
-  INCLUDES = -F/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks -I"/Users/puru/Desktop/C++ Projects/TApp/external/glfw/include" -I"/Users/puru/Desktop/C++ Projects/TApp/include" -I"/Users/puru/Desktop/C++ Projects/TApp/external/glad/include" -I"/Users/puru/Desktop/C++ Projects/TApp/external/imgui"
-  OBJECT_DIR = CMakeFiles/TApp.dir
-  OBJECT_FILE_DIR = CMakeFiles/TApp.dir/src
-
 
 # =============================================================================
-# Link build statements for EXECUTABLE target TApp
+# Link build statements for STATIC_LIBRARY target TApp
 
 
 #############################################
-# Link the executable TApp
+# Link the static library libTApp.a
 
-build TApp: CXX_EXECUTABLE_LINKER__TApp_Debug CMakeFiles/TApp.dir/src/Window/Window.cpp.o CMakeFiles/TApp.dir/src/Application/Application.cpp.o CMakeFiles/TApp.dir/src/main.cpp.o | libglad.a external/glfw/src/libglfw3.a libImGui.a || external/glfw/src/libglfw3.a libImGui.a libglad.a
-  FLAGS = -fsanitize=address -fno-omit-frame-pointer -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk
-  LINK_LIBRARIES = -framework OpenGL  libglad.a  external/glfw/src/libglfw3.a  libImGui.a  -framework Cocoa  -framework IOKit  -framework CoreFoundation  -framework QuartzCore
+build libTApp.a: CXX_STATIC_LIBRARY_LINKER__TApp_Debug CMakeFiles/TApp.dir/src/Window/Window.cpp.o CMakeFiles/TApp.dir/src/Application/Application.cpp.o || external/glfw/src/libglfw3.a libImGui.a libglad.a
+  ARCH_FLAGS = -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk
+  LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = CMakeFiles/TApp.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = TApp
-  TARGET_PDB = TApp.dbg
+  TARGET_FILE = libTApp.a
+  TARGET_PDB = TApp.a.dbg
 
 
 #############################################
@@ -637,6 +629,8 @@ build external/glfw/src/CMakeFiles/update_mappings | ${cmake_ninja_workdir}exter
 
 build ImGui: phony libImGui.a
 
+build TApp: phony libTApp.a
+
 build glad: phony libglad.a
 
 build glfw: phony external/glfw/src/libglfw3.a
@@ -655,7 +649,7 @@ build update_mappings: phony external/glfw/src/update_mappings
 #############################################
 # Folder: /Users/puru/Desktop/C++ Projects/TApp/cmake-build-debug
 
-build all: phony libglad.a libImGui.a TApp external/glfw/all
+build all: phony libglad.a libImGui.a libTApp.a external/glfw/all
 
 # =============================================================================
 

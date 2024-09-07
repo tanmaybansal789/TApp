@@ -9,7 +9,7 @@ namespace TApp {
             : width(width), height(height), title(std::move(title)), vsync(vsync) {}
         unsigned int width, height;
         std::string title;
-        bool vsync = true;
+        bool vsync;
     };
 }
 

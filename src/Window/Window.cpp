@@ -129,6 +129,7 @@ namespace TApp {
 
     // Setters
     void Window::setVSync(bool enabled) {
+        windowSettings.vsync = enabled;
         glfwSwapInterval(enabled ? 1 : 0);
     }
 
