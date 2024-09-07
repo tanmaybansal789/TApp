@@ -1,14 +1,14 @@
-#ifndef ALLOCATOR_TPP
-#define ALLOCATOR_TPP
+#ifndef POOL_ALLOCATOR_TPP
+#define POOL_ALLOCATOR_TPP
 
-#include <cassert>
+#include "Utils/Logging/Logging.h"
 
 namespace TApp {
-
+    // Normal PoolAllocator implementation
     template <typename T>
     PoolAllocator<T>::PoolAllocator(size_t poolSize)
         : poolSize(poolSize), elementSize(sizeof(T)), memoryPool(nullptr), freeList(nullptr) {
-        initializePool();
+        initialisePool();
     }
 
     template <typename T>
@@ -23,10 +23,10 @@ namespace TApp {
         if (requiredSize > elementSize) {
             // Allocate additional memory if U is larger than T
             size_t adjustedPoolSize = poolSize * (requiredSize / elementSize + (requiredSize % elementSize != 0 ? 1 : 0));
-            initializePool(adjustedPoolSize, requiredSize);
+            initialisePool(adjustedPoolSize, requiredSize);
         }
 
-        assert(freeList != nullptr && "PoolAllocator is out of memory!");
+        TAPP_ASSERT(freeList != nullptr, "PoolAllocator is out of memory!");
 
         // Take the first free block
         U* allocatedBlock = reinterpret_cast<U*>(freeList);
@@ -49,7 +49,7 @@ namespace TApp {
     }
 
     template <typename T>
-    void PoolAllocator<T>::initializePool(size_t adjustedPoolSize, size_t adjustedElementSize) {
+    void PoolAllocator<T>::initialisePool(size_t adjustedPoolSize, size_t adjustedElementSize) {
         // Adjust poolSize and elementSize if larger elements are needed
         if (adjustedPoolSize != poolSize || adjustedElementSize != elementSize) {
             poolSize = adjustedPoolSize;
@@ -62,7 +62,7 @@ namespace TApp {
         // Initialize the free list
         freeList = memoryPool;
         for (size_t i = 0; i < poolSize - 1; ++i) {
-            void* nextBlock = reinterpret_cast<void*>(reinterpret_cast<char*>(memoryPool) + (i + 1) * elementSize);
+            void* nextBlock = reinterpret_cast<char*>(memoryPool) + (i + 1) * elementSize;
             *reinterpret_cast<void**>(reinterpret_cast<void*>(reinterpret_cast<char*>(memoryPool) + i * elementSize)) = nextBlock;
         }
         // The last block points to nullptr
@@ -70,10 +70,9 @@ namespace TApp {
     }
 
     template <typename T>
-    void PoolAllocator<T>::initializePool() {
-        initializePool(poolSize, elementSize);
+    void PoolAllocator<T>::initialisePool() {
+        initialisePool(poolSize, elementSize);
     }
-
 }
 
-#endif // ALLOCATOR_TPP
+#endif // POOL_ALLOCATOR_TPP

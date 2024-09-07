@@ -1,7 +1,7 @@
 #ifndef SINGLETON_H
 #define SINGLETON_H
 
-namespace TEngine_V2 {
+namespace TApp {
     template <typename T>
     class Singleton {
     public:
@@ -14,6 +14,6 @@ namespace TEngine_V2 {
     };
 }
 
-#include "Engine/Utils/Singleton/Singleton.tpp"
+#include "Utils/Memory/Singleton/Singleton.tpp"
 
 #endif // SINGLETON_H

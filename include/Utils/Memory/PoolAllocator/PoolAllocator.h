@@ -1,8 +1,8 @@
-#ifndef ALLOCATOR_H
-#define ALLOCATOR_H
+#ifndef POOL_ALLOCATOR_H
+#define POOL_ALLOCATOR_H
 
-#include <cstddef>   // for std::size_t
-#include <new>       // for placement new
+#include <cstddef>
+#include <new>
 
 namespace TApp {
 
@@ -18,8 +18,8 @@ namespace TApp {
         void deallocate(T* p);
 
     private:
-        void initializePool(size_t adjustedPoolSize, size_t adjustedElementSize);
-        void initializePool();
+        void initialisePool(size_t adjustedPoolSize, size_t adjustedElementSize);
+        void initialisePool();
 
     private:
         T* memoryPool;
@@ -28,9 +28,8 @@ namespace TApp {
         size_t elementSize;
 
     };
-
 }
 
-#include "Utils/Memory/PoolAllocator.tpp"
+#include "Utils/Memory/PoolAllocator/PoolAllocator.tpp"
 
-#endif // ALLOCATOR_H
+#endif // POOL_ALLOCATOR_H
