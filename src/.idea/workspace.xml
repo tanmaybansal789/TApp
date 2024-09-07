@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2369879e-b498-4d22-9371-643e842e5eb0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../.gitmodules" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../external/glad/include/KHR/khrplatform.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../external/glad/include/glad/glad.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../external/glad/src/glad.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../external/glfw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../external/imgui" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../include/Application/Application.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../include/Events/Event/Event.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../include/Events/Event/Event.tpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../include/Events/EventDispatcher/EventDispatcher.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../include/Events/EventDispatcher/EventDispatcher.tpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../include/Events/EventListener/EventListener.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../include/Events/EventManager/EventManager.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../include/Events/EventManager/EventManager.tpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../include/Input/InputEvents.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../include/Layers/Layer/Layer.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../include/Layers/LayerStack/LayerStack.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../include/Layers/LayerStack/LayerStack.tpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../include/TApp.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../include/Utils/Logging/Logging.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../include/Utils/Memory/PoolAllocator/PoolAllocator.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../include/Utils/Memory/PoolAllocator/PoolAllocator.tpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../include/Utils/Memory/Singleton/Singleton.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../include/Utils/Memory/Singleton/Singleton.tpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../include/Window/Window.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../include/Window/WindowEvents.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../include/Window/WindowSettings.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/Application.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Window/Window.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ProjectApplicationVersion">
+    <option name="ide" value="CLion" />
+    <option name="majorVersion" value="2024" />
+    <option name="minorVersion" value="1.4" />
+    <option name="productBranch" value="Classic" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="2lU11Pe5oB3sKfisvfbeSnhpVdV" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.RadMigrateCodeStyle": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2369879e-b498-4d22-9371-643e842e5eb0" name="Changes" comment="" />
+      <created>1725219626066</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1725219626066</updated>
+      <workItem from="1725219627184" duration="1000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
