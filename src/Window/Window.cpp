@@ -127,6 +127,34 @@ namespace TApp {
         return layerStack;
     }
 
+    bool Window::isKeyPressed(int key) const {
+        return glfwGetKey(glfwWindow, key) == GLFW_PRESS;
+    }
+
+    bool Window::isMouseButtonPressed(int button) const {
+        return glfwGetMouseButton(glfwWindow, button) == GLFW_PRESS;
+    }
+
+    double Window::getMouseX() const {
+        double x, y;
+        glfwGetCursorPos(glfwWindow, &x, &y);
+        return x;
+    }
+
+    double Window::getMouseY() const {
+        double x, y;
+        glfwGetCursorPos(glfwWindow, &x, &y);
+        return y;
+    }
+
+    void Window::getMouseXY(double* x, double* y) const {
+        glfwGetCursorPos(glfwWindow, x, y);
+    }
+
+    double Window::getTime() const {
+        return glfwGetTime();
+    }
+
     // Setters
     void Window::setVSync(bool enabled) {
         windowSettings.vsync = enabled;
@@ -136,6 +164,10 @@ namespace TApp {
     void Window::setTitle(const std::string& title) {
         windowSettings.title = title;
         glfwSetWindowTitle(glfwWindow, title.c_str());
+    }
+
+    void Window::setTime(double time) {
+        glfwSetTime(time);
     }
 
     void Window::setClearColour(float r, float g, float b, float a) {
@@ -175,14 +207,12 @@ namespace TApp {
     }
 
     void Window::setCallbacks() {
-        // Firstly set user pointer to this
         glfwSetWindowUserPointer(glfwWindow, this);
 
         setKeyCallback([](GLFWwindow* window, int key, int scancode, int action, int mods) {
             auto* windowInstance = static_cast<Window*>(glfwGetWindowUserPointer(window));
             windowInstance->eventManager->dispatch<InternalEvents::KeyEvent>(key, scancode, action, mods);
 
-            // ImGui input handling
             ImGui_ImplGlfw_KeyCallback(window, key, scancode, action, mods);
         });
 
@@ -190,7 +220,6 @@ namespace TApp {
             auto* windowInstance = static_cast<Window*>(glfwGetWindowUserPointer(window));
             windowInstance->eventManager->dispatch<InternalEvents::MouseButtonEvent>(button, action, mods);
 
-            // ImGui input handling
             ImGui_ImplGlfw_MouseButtonCallback(window, button, action, mods);
         });
 

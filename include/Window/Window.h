@@ -45,10 +45,21 @@ namespace TApp {
 
         LayerStack& getLayerStack();
 
+        bool isKeyPressed(int key) const;
+        bool isMouseButtonPressed(int button) const;
+
+        double getMouseX() const;
+        double getMouseY() const;
+        void getMouseXY(double* x, double* y) const;
+
+        double getTime() const;
+
         // Setters
         void setVSync(bool enabled);
 
         void setTitle(const std::string& title);
+
+        void setTime(double time);
 
         static void setClearColour(float r, float g, float b, float a);
 

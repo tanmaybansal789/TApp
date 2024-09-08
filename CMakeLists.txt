@@ -11,6 +11,8 @@ set(SOURCES
 
         # Application sources
         src/Application/Application.cpp
+
+        src/main.cpp
 )
 
 # Add header files
@@ -84,7 +86,7 @@ target_include_directories(ImGui PUBLIC external/imgui
 
 # Includes and sources
 include_directories(include)
-add_library(TApp STATIC ${SOURCES} ${HEADERS})
+add_executable(TApp ${SOURCES} ${HEADERS})
 
 # Link libraries
 target_link_libraries(TApp

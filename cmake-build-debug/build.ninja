@@ -157,7 +157,7 @@ build libImGui.a: CXX_STATIC_LIBRARY_LINKER__ImGui_Debug CMakeFiles/ImGui.dir/ex
   TARGET_PDB = ImGui.a.dbg
 
 # =============================================================================
-# Object build statements for STATIC_LIBRARY target TApp
+# Object build statements for EXECUTABLE target TApp
 
 
 #############################################
@@ -181,22 +181,30 @@ build CMakeFiles/TApp.dir/src/Application/Application.cpp.o: CXX_COMPILER__TApp_
   OBJECT_DIR = CMakeFiles/TApp.dir
   OBJECT_FILE_DIR = CMakeFiles/TApp.dir/src/Application
 
+build CMakeFiles/TApp.dir/src/main.cpp.o: CXX_COMPILER__TApp_unscanned_Debug /Users/puru/Desktop/C++$ Projects/TApp/src/main.cpp || cmake_object_order_depends_target_TApp
+  DEFINES = -DGL_SILENCE_DEPRECATION
+  DEP_FILE = CMakeFiles/TApp.dir/src/main.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
+  INCLUDES = -F/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks -I"/Users/puru/Desktop/C++ Projects/TApp/external/glfw/include" -I"/Users/puru/Desktop/C++ Projects/TApp/include" -I"/Users/puru/Desktop/C++ Projects/TApp/external/glad/include" -I"/Users/puru/Desktop/C++ Projects/TApp/external/imgui"
+  OBJECT_DIR = CMakeFiles/TApp.dir
+  OBJECT_FILE_DIR = CMakeFiles/TApp.dir/src
+
 
 # =============================================================================
-# Link build statements for STATIC_LIBRARY target TApp
+# Link build statements for EXECUTABLE target TApp
 
 
 #############################################
-# Link the static library libTApp.a
+# Link the executable TApp
 
-build libTApp.a: CXX_STATIC_LIBRARY_LINKER__TApp_Debug CMakeFiles/TApp.dir/src/Window/Window.cpp.o CMakeFiles/TApp.dir/src/Application/Application.cpp.o || external/glfw/src/libglfw3.a libImGui.a libglad.a
-  ARCH_FLAGS = -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk
-  LANGUAGE_COMPILE_FLAGS = -g
+build TApp: CXX_EXECUTABLE_LINKER__TApp_Debug CMakeFiles/TApp.dir/src/Window/Window.cpp.o CMakeFiles/TApp.dir/src/Application/Application.cpp.o CMakeFiles/TApp.dir/src/main.cpp.o | libglad.a external/glfw/src/libglfw3.a libImGui.a || external/glfw/src/libglfw3.a libImGui.a libglad.a
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk
+  LINK_LIBRARIES = -framework OpenGL  libglad.a  external/glfw/src/libglfw3.a  libImGui.a  -framework Cocoa  -framework IOKit  -framework CoreFoundation  -framework QuartzCore
   OBJECT_DIR = CMakeFiles/TApp.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = libTApp.a
-  TARGET_PDB = TApp.a.dbg
+  TARGET_FILE = TApp
+  TARGET_PDB = TApp.dbg
 
 
 #############################################
@@ -629,8 +637,6 @@ build external/glfw/src/CMakeFiles/update_mappings | ${cmake_ninja_workdir}exter
 
 build ImGui: phony libImGui.a
 
-build TApp: phony libTApp.a
-
 build glad: phony libglad.a
 
 build glfw: phony external/glfw/src/libglfw3.a
@@ -649,7 +655,7 @@ build update_mappings: phony external/glfw/src/update_mappings
 #############################################
 # Folder: /Users/puru/Desktop/C++ Projects/TApp/cmake-build-debug
 
-build all: phony libglad.a libImGui.a libTApp.a external/glfw/all
+build all: phony libglad.a libImGui.a TApp external/glfw/all
 
 # =============================================================================
 
